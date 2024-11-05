@@ -1,0 +1,41 @@
+{
+  "name": "ahj-events",
+  "version": "1.0.0",
+  "description": "Правила сдачи задания:",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "test": "jest",
+    "lint": "eslint .",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ka-Qessa/ahj-events.git"
+  },
+  "author": "Ka-Qessa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ka-Qessa/ahj-events/issues"
+  },
+  "homepage": "https://github.com/Ka-Qessa/ahj-events#readme",
+  "dependencies": {
+    "core-js": "^3.39.0",
+    "global": "^4.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.13.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.3",
+    "live-server": "^1.2.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}
