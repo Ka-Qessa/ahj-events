@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 /* eslint-disable no-alert */
 /* eslint-disable no-plusplus */
 class GoblinGame {
