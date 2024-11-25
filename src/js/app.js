@@ -18,7 +18,7 @@ class GoblinGame {
       const hole = document.createElement('div');
       hole.classList.add('hole');
       hole.id = `hole${i}`;
-      gameBoard.appendChild(hole);
+      this.gameBoard.appendChild(hole);
       this.holes.push(hole);
     }
   }
@@ -32,7 +32,7 @@ class GoblinGame {
 
   stopGame() {
     clearInterval(this.timer);
-    this.gameBoard.addEventListener('click', this.handleGoblinClick.bind(this));
+    this.gameBoard.removeEventListener('click', this.handleGoblinClick.bind(this));
   }
 
   moveGoblin() {
@@ -45,7 +45,7 @@ class GoblinGame {
       this.missed++;
       if (this.missed >= 5) {
         this.stopGame();
-        alert('Game Over!');
+        console.warn('Game Over!');
       }
     }
   }
