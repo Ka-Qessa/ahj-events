@@ -1,3 +1,7 @@
+/* eslint-disable no-undef */
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable no-alert */
+/* eslint-disable no-plusplus */
 class GoblinGame {
   constructor() {
     this.gameBoard = document.querySelector('.game-board');
@@ -45,7 +49,7 @@ class GoblinGame {
       this.missed++;
       if (this.missed >= 5) {
         this.stopGame();
-        console.warn('Game Over!');
+        alert('Game Over!');
       }
     }
   }
